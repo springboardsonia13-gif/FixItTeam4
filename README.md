@@ -1,4 +1,4 @@
-## 📌 FixItNow – Neighborhood Service & Repair Marketplace
+# 📌 FixItNow – Neighborhood Service & Repair Marketplace
 
 ### A Full-Stack Service Booking Platform
 
@@ -79,6 +79,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
