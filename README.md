@@ -64,6 +64,7 @@ FixItNow is a full-stack neighborhood service marketplace that connects resident
 
 - Module E: Admin Panel (Verification, Disputes, Analytics)
 
+## Screenshot
 
 ## ⚙️ Installation & Setup
 
@@ -79,6 +80,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
