@@ -3,7 +3,7 @@
 ### A Full-Stack Service Booking Platform
 
 
-##📖 Project Overview
+## 📖 Project Overview
 
 FixItNow is a full-stack neighborhood service marketplace that connects residents with nearby electricians, plumbers, carpenters, appliance repair professionals, and other service experts. The platform allows customers to search nearby providers, book instant services, chat in real-time, and leave ratings and reviews. Providers can manage their profiles, bookings, and service history, while admins monitor verification, disputes, and platform analytics.
 
@@ -79,6 +79,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
