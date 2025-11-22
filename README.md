@@ -8,8 +8,6 @@
 FixItNow is a full-stack neighborhood service marketplace that connects residents with nearby electricians, plumbers, carpenters, appliance repair professionals, and other service experts. The platform allows customers to search nearby providers, book instant services, chat in real-time, and leave ratings and reviews. Providers can manage their profiles, bookings, and service history, while admins monitor verification, disputes, and platform analytics.
 
 
-
-
 ## ⭐ Key Features
 
 - Location-based search & booking (electricians, plumbers, carpenters, etc.)
@@ -43,15 +41,15 @@ FixItNow is a full-stack neighborhood service marketplace that connects resident
 
 ### Database
 
-MySQL
+- MySQL
 
-APIs & Authentication
+- APIs & Authentication
 
-JWT (Access + Refresh tokens)
+- JWT (Access + Refresh tokens)
 
-Google Maps API
+- Google Maps API
 
-Geolocation API
+- Geolocation API
 
 
 ## Core Modules:
@@ -65,9 +63,6 @@ Geolocation API
 - Module D: Reviews, Ratings & Chat
 
 - Module E: Admin Panel (Verification, Disputes, Analytics)
-
-
-
 
 
 ## ⚙️ Installation & Setup
@@ -84,4 +79,5 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
