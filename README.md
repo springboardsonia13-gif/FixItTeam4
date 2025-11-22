@@ -1,300 +1,157 @@
-📌 FixItNow – Neighborhood Service & Repair Marketplace
-
+📌 FixItNow — Neighborhood Service & Repair Marketplace
 A Full-Stack Service Booking Platform
-
-
+________________________________________
 📖 Project Overview
-
-FixItNow is a full-stack neighborhood service marketplace that connects residents with nearby electricians, plumbers, carpenters, appliance repair professionals, and other service experts. The platform allows customers to search nearby providers, book instant services, chat in real-time, and leave ratings and reviews. Providers can manage their profiles, bookings, and service history, while admins monitor verification, disputes, and platform analytics.
-
-
-
-
+FixItNow is a complete neighborhood service marketplace that connects residents with nearby electricians, plumbers, carpenters, appliance repair technicians, and other experts.
+Customers can search by location, book instant services, chat in real-time, and leave ratings, while providers manage profiles, bookings, and history. Admins handle verification, disputes, and analytics.
+________________________________________
 ⭐ Key Features
-
-Location-based search & booking (electricians, plumbers, carpenters, etc.)
-
-Service categories & subcategories
-
-Instant booking with time slots
-
-Service provider profiles with reviews, ratings, completed jobs
-
-Real-time customer–provider chat
-
-Booking dashboards for customers & providers
-
-Admin panel for verification, disputes, analytics
-
-
+•	🔍 Location-based search & booking
+•	📂 Service categories & subcategories
+•	📅 Instant booking with time slots
+•	👨‍🔧 Service provider profiles (reviews, ratings, job history)
+•	💬 Real-time customer–provider chat (WebSockets)
+•	📊 Booking dashboards for customers & providers
+•	🛠️ Admin panel: verification, disputes, analytics
+________________________________________
 🧑‍💻 Tech Stack
-
 Frontend
-
-React.js
-
-Tailwind CSS
-
+•	React.js
+•	Tailwind CSS
 Backend
-
-Spring Boot (Java)
-
-WebSockets (Spring WebSocket + STOMP)
-
+•	Spring Boot (Java)
+•	Spring WebSocket + STOMP
 Database
-
-MySQL
-
+•	MySQL
 APIs & Authentication
-
-JWT (Access + Refresh tokens)
-
-Google Maps API
-
-Geolocation API
-
+•	JWT (Access + Refresh tokens)
+•	Google Maps API
+•	Geolocation API
+________________________________________
 🏗 System Architecture
-
-The architecture diagram (on page 2) clearly shows how the frontend interacts with the backend modules such as User Management, Booking System, Reviews, Admin Panel, and Location Search via MySQL and Google Maps.
-
-
-
-
-Core Modules:
-
+The architecture includes:
+•	React Frontend → Spring Boot Backend
+•	Backend → MySQL database
+•	Backend → Google Maps API
+•	WebSocket channel for live chat
+________________________________________
+🧩 Core Modules
 Module A: User & Service Provider Management
-
 Module B: Service Listing & Location-based Search
-
 Module C: Booking & Scheduling
-
 Module D: Reviews, Ratings & Chat
-
 Module E: Admin Panel (Verification, Disputes, Analytics)
-
-
+________________________________________
 🗓 8-Week Milestone Plan
-
-
-
 Milestone 1 (Weeks 1–2): Authentication & Setup
-
 Week 1
-
-Setup project architecture (React + Spring Boot)
-
-Implement JWT login/register
-
-Create user model (customer, provider, admin)
-
+•	Project setup: React + Spring Boot
+•	JWT login/register
+•	User model (customer, provider, admin)
 Week 2
-
-Role-based routing (dashboards for all roles)
-
-Capture location (Geolocation API)
-
-Provider registration form (category, skills, service area)
-
-✔ Expected Output
-
-Login/Register UI
-
-Role-based UI
-
-Location-aware onboarding
-
+•	Role-based routing
+•	Location capture (Geolocation API)
+•	Provider registration form
+✔ Output: Login/Register UI, role dashboards, location onboarding
+________________________________________
 Milestone 2 (Weeks 3–4): Service Listings & Map Search
-
 Week 3
-
-Create DB structure for categories & subcategories
-
-Providers list services with pricing & availability
-
-Customers browse by category & location
-
+•	DB for categories & subcategories
+•	Provider service listing (pricing & availability)
 Week 4
-
-Google Maps–based provider search
-
-Service detail page + booking form
-
-Show provider reviews & ratings
-
-✔ Expected Output
-
-Fully functional service listing
-
-Map search integration
-
+•	Map-based provider search
+•	Service details + reviews
+✔ Output: Full listing + Google Maps search
+________________________________________
 Milestone 3 (Weeks 5–6): Booking System & Interaction
-
 Week 5
-
-Booking request system with time slots
-
-Provider accept/reject
-
-Booking statuses (Pending, Confirmed, Completed, Cancelled)
-
+•	Booking flow
+•	Provider accept/reject
+•	Booking status updates
 Week 6
-
-Real-time chat (WebSockets)
-
-Review & rating after completion
-
-✔ Expected Output
-
-Full booking cycle
-
-Live chat
-
+•	Real-time chat
+•	Reviews & ratings
+✔ Output: Full booking cycle + chat
+________________________________________
 Milestone 4 (Weeks 7–8): Admin Panel & Deployment
-
 Week 7
-
-Admin verification of providers (document upload)
-
-Dispute resolution workflow
-
+•	Provider verification (document upload)
+•	Dispute handling
 Week 8
-
-Analytics dashboard (top providers, trends)
-
-Final deployment & QA
-
-✔ Expected Output
-
-Fully functional admin panel
-
-Dispute resolution
-
-Analytics dashboard
-
-🗄 Database Schema (MySQL)
-
-
-Users Table
-
-id (PK)
-
-name
-
-email (unique)
-
-password
-
-role (customer/provider/admin)
-
-location
-
-created_at
-
-Services Table
-
-id (PK)
-
-provider_id (FK)
-
-category
-
-subcategory
-
-description
-
-price
-
-availability
-
-location
-
-created_at
-
-Bookings Table
-
-id (PK)
-
-service_id (FK)
-
-customer_id (FK)
-
-provider_id (FK)
-
-booking_date
-
-time_slot
-
-status
-
-created_at
-
-Reviews Table
-
-id (PK)
-
-booking_id (FK)
-
-customer_id (FK)
-
-provider_id (FK)
-
-rating
-
-comment
-
-created_at
-
-Messages (Chat) Table
-
-id (PK)
-
-sender_id
-
-receiver_id
-
-content
-
-sent_at
-
-Reports Table
-
-id (PK)
-
-target_type (booking/provider/customer)
-
-target_id
-
-reported_by
-
-reason
-
-created_at
-
-AdminLogs Table
-
-id (PK)
-
-admin_id
-
-action
-
-target_id
-
-target_type
-
-timestamp
-
-
-
-
-
+•	Analytics dashboard
+•	Final QA + deployment
+✔ Output: Fully functional admin panel
+________________________________________
 ⚙️ Installation & Setup
 Backend (Spring Boot)
 cd fixitnow-backend
 mvn clean install
 mvn spring-boot:run
-
 Frontend (React + Tailwind)
 cd fixitnow-frontend
 npm install
 npm start
+________________________________________
+🔑 Environment Variables
+Backend
+SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/fixitnow
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=your_password
+JWT_SECRET=your_jwt_secret
+GOOGLE_MAPS_API_KEY=your_api_key
+Frontend
+REACT_APP_API_URL=http://localhost:8080/api
+REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key
+________________________________________
+🗂 Database Schema (Summary)
+•	users
+•	providers
+•	services
+•	bookings
+•	reviews
+•	messages
+•	documents
+________________________________________
+📡 API Endpoints (Summary)
+Auth
+•	POST /api/auth/register
+•	POST /api/auth/login
+•	POST /api/auth/refresh
+Providers
+•	GET /api/providers
+•	GET /api/providers/{id}
+Bookings
+•	POST /api/bookings
+•	PATCH /api/bookings/{id}
+Reviews
+•	POST /api/reviews
+Chat (WebSocket)
+•	STOMP endpoint: /ws
+•	Send: /app/chat.sendMessage
+•	Subscribe: /topic/conversation.{id}
+________________________________________
+🔐 Authentication & Security
+•	JWT access + refresh tokens
+•	Role-based access: customer/provider/admin
+•	File upload validation
+•	Server-side booking validation
+________________________________________
+🧪 Testing
+Backend
+mvn test
+Frontend
+npm test
+________________________________________
+🚀 Deployment
+Backend:
+mvn clean package
+java -jar target/fixitnow-backend.jar
+Frontend: Deploy via Vercel / Netlify / Nginx.
+________________________________________
+🖼 Screenshots
+
+________________________________________
+
+📄 License
+MIT License © 2025 springboardsonia13-gif
+
