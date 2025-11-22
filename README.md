@@ -66,6 +66,7 @@ FixItNow is a full-stack neighborhood service marketplace that connects resident
 
 ## Screenshot
 ![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/cd7e0df37ad4bd1c43e57f8ed95be60ec5236c26/4.png)
+![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/907ef797b2b4ab21b5a3bbc06caab680abe11890/5.png)
 
 
 ## ⚙️ Installation & Setup
@@ -82,6 +83,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
