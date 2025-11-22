@@ -69,7 +69,7 @@ FixItNow is a full-stack neighborhood service marketplace that connects resident
 ![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/907ef797b2b4ab21b5a3bbc06caab680abe11890/5.png)
 ![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/cd1165ae4703d13f7bd97dceeea37777078818c7/2.png)
 ![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/371bd63189893d6fe5b7abddfe906d795c07c51f/1.png)
-
+![image alt](https://github.com/springboardsonia13-gif/FixItTeam4/blob/efee4abae0842c1677600b567f4bbf1a115ccdb1/3.png)
 ## ⚙️ Installation & Setup
 
 ### Backend (Spring Boot)
@@ -84,6 +84,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
