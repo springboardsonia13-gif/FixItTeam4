@@ -65,7 +65,7 @@ FixItNow is a full-stack neighborhood service marketplace that connects resident
 - Module E: Admin Panel (Verification, Disputes, Analytics)
 
 ## Screenshot
-
+https://github.com/springboardsonia13-gif/FixItTeam4/blob/cd7e0df37ad4bd1c43e57f8ed95be60ec5236c26/4.png
 ## ⚙️ Installation & Setup
 
 ### Backend (Spring Boot)
@@ -80,6 +80,7 @@ cd fixitnow-frontend
 npm install
 
 npm start
+
 
 
 
